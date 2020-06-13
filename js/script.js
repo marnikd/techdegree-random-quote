@@ -11,30 +11,30 @@ const quotes = [
   {
     text:"True peace is not merely the absence of tension; it is the presence of justice.",
     source:"Martin Luther King",
-    location:"Stride Toward Freedom",
-    time: 1947 
+    citation:"Stride Toward Freedom",
+    year: 1947 
   },
   {
     text:"The ultimate measure of a man is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.",
     source:"Martin Luther King",
-    location:"Strength to Love",
-    time: 1963
+    citation:"Strength to Love",
+    year: 1963
   },
   {
     text:"The time is always right to do what is right.",
     source:"Martin Luther King",
-    location:"Oberlin College commencement speech",
-    time: 1965 
+    citation:"Oberlin College commencement speech",
+    year: 1965 
   },
   {
     text:"The greatest glory in living lies not in never falling, but in rising every time we fall.",
     source:"Nelson Mandela",
-    time: 2000
+    year: 2000
   },
   {
     text:"The way to get started is to quit talking and begin doing.",
     source:"Walt Disney",
-    location:"Journal for Achievers"
+    citation:"Journal for Achievers"
   },
   {
     text:"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma  which is living with the results of other people's thinking.",
@@ -93,11 +93,11 @@ function printQuote() {
 const quote = getRandomQuote();
   var html = `<p class = "quote" > ${quote.text}</p>`;
   html+= `<p class = "source" ;"> ${quote.source}`;
-  if(quote.location !== undefined){
-    html+= `<span class="citation">${quote.location}</span> `;
+  if(quote.citation !== undefined){
+    html+= `<span class="citation">${quote.citation}</span> `;
   } 
-  if(quote.time !== undefined){
-    html+= `<span class="year">${quote.time}</span> `;
+  if(quote.year !== undefined){
+    html+= `<span class="year">${quote.year}</span> `;
   } 
     html+= `</p>`;
 
